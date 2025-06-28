@@ -19,7 +19,7 @@ spec:
             - containerPort: 8000
           env:
             - name: REDIS_HOST
-              value: "redis"
+              value: "host.docker.internal"
             - name: REDIS_PORT
               value: "6379"
 ---
