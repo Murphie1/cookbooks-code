@@ -34,4 +34,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8000
-  type: ClusterIP
+      nodePort: 30080  # Pick a number between 30000–32767
+  type: NodePort
