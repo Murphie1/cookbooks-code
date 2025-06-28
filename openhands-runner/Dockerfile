@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 RUN curl -fsSL https://ollama.com/install.sh | bash
 
 # Install Python dependencies
-RUN pip install --no-cache-dir openhands mistralai
+RUN pip install --no-cache-dir openhands-aci mistralai
 
 # Copy the runner script
 COPY entrypoint.py /app/entrypoint.py
