@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: openhands
-          image: your-dockerhub-user/openhands-runner:latest
+          image: murphyalbert/cookbooks:openhandsrunnerlatest
           env:
             - name: TASK
               value: "{{TASK}}"
