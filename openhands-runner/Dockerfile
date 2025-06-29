@@ -13,7 +13,7 @@ RUN curl -fsSL https://ollama.com/install.sh | bash
 ENV OLLAMA_ORIGINS="*"
 
 # Install Python dependencies
-RUN pip install --no-cache-dir openhands-ai openhands-aci mistralai
+RUN pip install --no-cache-dir openhands-ai redis asyncio ffmpeg openhands-aci mistralai
 
 # Set working directory for Git operations
 WORKDIR /workspace
