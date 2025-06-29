@@ -9,7 +9,7 @@ from openhands.core.config import OpenHandsConfig, setup_config_from_args
 from openhands.core.setup import generate_sid 
 from openhands.core.logger import openhands_logger as logger 
 from openhands.core.schema import ActionType
-
+from openhands.events.action.action import Action
 
 TASK = os.getenv("TASK") 
 REPO_URL = os.getenv("REPO_URL")
