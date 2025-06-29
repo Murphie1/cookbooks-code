@@ -19,7 +19,7 @@ MODEL = os.getenv("MODEL", "devstral")
 TASK_ID = os.getenv("TASK_ID")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
 WORKSPACE = "/workspace"
-REDIS_HOST = os.getenv("REDIS_HOST", "host.docker.internal")
+REDIS_HOST = os.getenv("REDIS_HOST", "170.9.235.12")
 SESSION_NAME = os.getenv("SESSION_NAME", "agent-session")
 
 r = redis.Redis(host=REDIS_HOST, port=6379, db=0)
